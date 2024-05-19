@@ -6105,30 +6105,7 @@ $row2[] = $data["idStatus"];
 $row2[] = $data["Description"];
 $lookup2[] = $row2;
 }
-$pageObject-&gt;setProxyValue("lookup2",$lookup2);
-
-//Change field labels
-global $field_labels, $tables_data;
-$sql="select * from Order where tablename='".$table."'";
-$rs = CustomQuery($sql);
-while ($data = db_fetch_array($rs)) {
-		$field_labels[$table][mlang_getcurrentlang()][GoodFieldName($data["field"])]=$data["label"];
-		if ($data["readonly"]==1)
-			$tables_data[$table][$data["field"]]["EditFormats"]["edit"]["EditFormat"]="Readonly";
-		if ($data["required"]==1)
-			$tables_data[$table][$data["field"]]["EditFormats"]["edit"]["validateAs"]["basicValidate"][0]="IsRequired";
-}
-
-global $strTableName;
-$sql="select * from Order where tablename='".$strTableName."'";
-$rs = CustomQuery($sql);
-while ($data = db_fetch_array($rs)) {
-	if ($data["visible"]!=1) {
-		$xt-&gt;assign($data["field"]."_fieldheadercolumn", false);
-		$xt-&gt;assign($data["field"]."_fieldcolumn", false);
-	}
-}
-</m_strEventCode>
+$pageObject-&gt;setProxyValue("lookup2",$lookup2);</m_strEventCode>
 					<m_strEventID>EVENT_BEFORESHOW_LIST</m_strEventID>
 					<m_strWidgetID></m_strWidgetID>
 					<sub></sub>
