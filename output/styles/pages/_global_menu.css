@@ -1,0 +1,25 @@
+[data-page="_global_menu"][data-itemid="welcome_item"] > .bs-welcome-header {
+  background-color: #4169E1;
+}
+[data-page="_global_menu"][data-itemid="welcome_item4"] > .bs-welcome-header {
+  background-color: #DAA520;
+}
+[data-page="_global_menu"][data-itemid="welcome_item2"] > .bs-welcome-header {
+  background-color: #2F4F4F;
+}
+[data-page="_global_menu"][data-itemid="welcome_item6"] > .bs-welcome-header {
+  background-color: #00C2C5;
+}
+
+.host {
+  color: red;
+}
+.host {
+  color: red;
+}
+.host {
+  color: red;
+}
+.host {
+  color: red;
+}
