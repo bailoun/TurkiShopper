@@ -1,0 +1,6 @@
+[19-May-2024 00:54:01 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined method DB::error() in C:\xampp\htdocs\MMShipping\buttonhandler.php:773
+Stack trace:
+#0 C:\xampp\htdocs\MMShipping\buttonhandler.php(127): buttonHandler_Change_Status(Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\MMShipping\buttonhandler.php on line 773
+[19-May-2024 01:54:57 America/New_York] PHP Parse error:  syntax error, unexpected 'at' (T_STRING), expecting ')' in C:\xampp\htdocs\MMShipping\include\order_events.php on line 255
